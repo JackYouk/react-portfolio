@@ -1,18 +1,11 @@
-const styles = {
-  container: {
-      backgroundImage: `url(${'https://via.placeholder.com/150'})`,
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      width: '100vw',
-      height: '100vh'
-  }
-};
+import Particles from "./Particles";
+import './App.css';
 
 function App() {
   return (
-    <div style={styles.container}>
-
+    <div className="App">
+      <h1 className="App-header">Hello World</h1>
+      <Particles />
     </div>
   )
 }
