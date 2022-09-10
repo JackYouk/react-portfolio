@@ -1,17 +1,18 @@
-import { Backdrop, Fab } from "@mui/material";
-import { Container } from "@mui/system";
+const styles = {
+  container: {
+      backgroundImage: `url(${'https://via.placeholder.com/150'})`,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      width: '100vw',
+      height: '100vh'
+  }
+};
 
 function App() {
   return (
-    <div>
-      <Backdrop>
-      <Container fixed>
-        <Fab color="primary" aria-label="add">
-          +
-        </Fab>
-      </Container>
-      </Backdrop>
-      
+    <div style={styles.container}>
+
     </div>
   )
 }
