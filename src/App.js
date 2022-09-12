@@ -1,11 +1,14 @@
 import Particles from "./Particles";
 import './App.css';
+import Header from "./Header";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="App-header">Hello World</h1>
-      <Particles />
+      <div className="App-header"> 
+        <Header />
+        <Particles />
+      </div>
     </div>
   )
 }
