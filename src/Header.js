@@ -17,7 +17,7 @@ const Header = () => {
                         <EmailIcon />
                     </Button>
                 </a>
-                <a href="https://github.com/JackYouk" style={{marginRight: 7}}>
+                <a href="https://github.com/JackYouk" target="_blank" rel="noreferrer" style={{marginRight: 7}}>
                     <Button variant="contained" size="medium">
                         <GitHubIcon />
                     </Button>
