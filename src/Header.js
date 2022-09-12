@@ -7,33 +7,32 @@ import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 const Header = () => {
 
     return (
-        <div>
-            {/* Background is picture of me */}
+        <div style={{zIndex: 505}}>
             <div>
                 <div>
                     <h1>Jack Youkstetter Portfolio</h1>
                 </div>
-                <a href="mailto:jackyoukstetter1@gmail.com" style={{marginRight: 7}}>
-                    <Button variant="contained" size="large">
+                <a href="mailto:jackyoukstetter1@gmail.com" style={{marginRight: 7, marginLeft: 7}}>
+                    <Button variant="contained" size="medium">
                         <EmailIcon />
                     </Button>
                 </a>
                 <a href="https://github.com/JackYouk" style={{marginRight: 7}}>
-                    <Button variant="contained" size="large">
+                    <Button variant="contained" size="medium">
                         <GitHubIcon />
                     </Button>
                 </a>
                 <a href="tel:+15105080618" style={{marginRight: 7}}>
-                    <Button variant="contained" size="large">
+                    <Button variant="contained" size="medium">
                         <PhoneIcon />
                     </Button>
                 </a>
                 <a href="sms:+15105080618" style={{marginRight: 7}}>
-                    <Button variant="contained" size="large">
+                    <Button variant="contained" size="medium">
                         <ChatBubbleIcon />
                     </Button>
                 </a>
-                <Button variant="contained" size="large" style={{marginRight: 7}} onClick={() => {
+                <Button variant="contained" size="medium" style={{marginRight: 7}} onClick={() => {
                     // modal for resume
                 }}>
                     Resume
