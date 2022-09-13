@@ -1,10 +1,27 @@
+import * as React from 'react';
 import Button from "@mui/material/Button";
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import PhoneIcon from '@mui/icons-material/Phone';
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
 
 const Header = () => {
+
+    // modal
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
+    const modalStyle = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        width: 400,
+        border: '2px solid #000',
+      };
 
     return (
         <div style={{zIndex: 505}}>
@@ -32,12 +49,20 @@ const Header = () => {
                         <ChatBubbleIcon />
                     </Button>
                 </a>
-                <Button variant="contained" size="medium" style={{marginRight: 7}} onClick={() => {
-                    // modal for resume
-                }}>
+                <Button variant="contained" size="medium" style={{marginRight: 7}} onClick={handleOpen}>
                     Resume
                 </Button>
             </div>
+            <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <Box sx={modalStyle}>
+                    <img src='/resume.png' alt='resume' />
+                </Box>
+            </Modal>
         </div>
     );
 }
