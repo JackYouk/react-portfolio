@@ -6,6 +6,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
+import resumeImg from './images/resume.png'
 
 const Header = () => {
 
@@ -59,7 +60,7 @@ const Header = () => {
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={modalStyle} id='modalBox'>
-                    <img src='/resume.png' alt='resume' />
+                    <img src={resumeImg} alt='resume' />
                 </Box>
             </Modal>
         </div>

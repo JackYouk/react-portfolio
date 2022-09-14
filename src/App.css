@@ -15,5 +15,16 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  @media screen {
+    
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .App-header {
+    height: 200vh;
+    min-height: 200vh;
+  }
 }
 
