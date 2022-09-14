@@ -1,3 +1,3 @@
 # Portfolio Website
-- URL
+- URL: https://jackyouk.github.io/react-portfolio/
 - Built using React, MaterialUI, and TSParticles
