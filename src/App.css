@@ -21,9 +21,16 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .App-header {
-    height: 200vh;
+    height: 210vh;
+    min-height: 200vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .App-header {
+    height: 280vh;
     min-height: 200vh;
   }
 }
