@@ -7,8 +7,8 @@
 .App-header {
   margin: none;
   background-color: #282c34;
-  height: 200vh;
-  min-height: 200vh;
+  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

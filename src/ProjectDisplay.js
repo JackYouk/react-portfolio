@@ -10,39 +10,45 @@ import Grid from '@mui/material/Grid'; // Grid version 1
 import GitHubIcon from '@mui/icons-material/GitHub';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
+import B4UBoardPic from './images/B4UBoardPic.png';
+import offloadPic from './images/offloadPic.png';
+import BlogSitePic from './images/BlogSitePic.png';
+import WeatherDashboardPic from './images/WeatherDashboardPic.png';
+import PortfolioPic from './images/PortfolioPic.png';
+
 const ProjectDisplay = () => {
     const projects = [
         {
             title: 'Offload',
-            picture: '/offloadPic.png',
+            picture: offloadPic,
             description: 'Marketplace App',
             github: 'https://github.com/ayeh6/Offload',
             link: 'https://yeh-offload.herokuapp.com/',
         },
         {
             title: 'BlogSite',
-            picture: '/BlogSitePic.png',
+            picture: BlogSitePic,
             description: 'Social Media App',
             github: 'https://github.com/JackYouk/blogSite',
             link: 'https://blogsitebyjackjack.herokuapp.com/',
         },
         {
             title: 'B4UBoard',
-            picture: '/B4UBoardPic.png',
+            picture: B4UBoardPic,
             description: 'Travel Information App',
             github: 'https://github.com/JackYouk/B4UBoard',
             link: 'http://b4uboard.online/',
         },
         {
             title: 'Weather Dashboard',
-            picture: '/WeatherDashboardPic.png',
+            picture: WeatherDashboardPic,
             description: 'Weather App',
             github: 'https://github.com/JackYouk/weather-dashboard',
             link: 'https://jackyouk.github.io/weather-dashboard/',
         },
         {
             title: 'Portfolio',
-            picture: '/PortfolioPic.png',
+            picture: PortfolioPic,
             description: 'ฅ^•ﻌ•^ฅ',
             github: 'https://github.com/JackYouk/react-portfolio',
             link: 'https://jackyouk.github.io/react-portfolio/',
