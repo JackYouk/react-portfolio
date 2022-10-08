@@ -15,9 +15,17 @@ import offloadPic from './images/offloadPic.png';
 import BlogSitePic from './images/BlogSitePic.png';
 import WeatherDashboardPic from './images/WeatherDashboardPic.png';
 import PortfolioPic from './images/PortfolioPic.png';
+import LFGPic from './images/LFG.png'
 
 const ProjectDisplay = () => {
     const projects = [
+        {
+            title: 'LFG',
+            picture: LFGPic,
+            description: 'Social Media/LFG App',
+            github: 'https://github.com/jmonty94/lets-fricking-game',
+            link: 'https://lets-frickin-game.herokuapp.com/',
+        },
         {
             title: 'Offload',
             picture: offloadPic,
@@ -56,21 +64,18 @@ const ProjectDisplay = () => {
     ]
     return (
         <div style={{
-            marginTop: 30,
+            margin: 30,
             zIndex: 55,
+            display: 'flex',
+            justifyContent: 'center'
+            
         }}>
-            <Grid container style={{
-                            justifyContent: 'center',
-                            margin: 1
-                        }}>
+            <Grid container spacing={3} justifyContent="center">
                 {projects.map(project => {
                     // create card for projects
                     return (
-                        <Grid xs={8} md={4}>
-                        <div style={{
-                            margin: 5,
-                            marginTop: 20,
-                        }}>
+                        <Grid item xs={8} md={4} justifyContent="center">
+                        
                             <Card sx={{ maxWidth: 345 }}>
                                 <CardMedia
                                     component="img"
@@ -99,7 +104,7 @@ const ProjectDisplay = () => {
                                     </Button>
                                 </CardActions>
                             </Card>
-                        </div>
+                        
                         </Grid>
                     );
                 })}
