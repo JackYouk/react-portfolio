@@ -24,7 +24,7 @@ const Header = () => {
       };
 
     return (
-        <div style={{zIndex: 505}}>
+        <div style={{zIndex: 505, margin: 3}}>
             <div>
                 <div>
                     <h1>Jack Youkstetter Portfolio</h1>

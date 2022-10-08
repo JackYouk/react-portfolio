@@ -11,6 +11,8 @@ function App() {
         <ProjectDisplay />
         <Particles />
       </div>
+      
+      
     </div>
   )
 }

@@ -7,8 +7,8 @@
 .App-header {
   margin: none;
   background-color: #282c34;
-  height: 100vh;
-  min-height: 100vh;
+  /* height: 100vh;
+  min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,7 @@
     
   }
 }
-
+/* 
 @media only screen and (max-width: 900px) {
   .App-header {
     height: 210vh;
@@ -30,8 +30,8 @@
 
 @media only screen and (max-width: 400px) {
   .App-header {
-    height: 280vh;
-    min-height: 200vh;
+    height: 400vh;
+    min-height: 280vh;
   }
 }
-
+ */
